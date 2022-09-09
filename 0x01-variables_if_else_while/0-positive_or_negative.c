@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Description: main - Print out a string on stdout.
- * Return 0 if successful.
+ * main - Entry point. Print out a string on stdout.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
