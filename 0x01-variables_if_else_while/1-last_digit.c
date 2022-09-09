@@ -22,7 +22,7 @@ int main(void)
 	else if (m == 0)
 		printf("%s %d is %d and is 0\n", str, n, m);
 	else if (m < 6)
-		print("%s %d is %d and is less than 6 and not 0\n", str, n, m);
+		printf("%s %d is %d and is less than 6 and not 0\n", str, n, m);
 
 	return (0);
 }
