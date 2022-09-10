@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int 1, j, k;
+	int i, j, k;
 
 	i = 0;
 
-	while (1 < 100)
+	while (i < 100)
 	{
 		j = i % 10;
 		k = i /10;
