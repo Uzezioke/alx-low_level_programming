@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <math.h>
+
 /**
  * main -main block
- * Description: Print the sum of all multiples of 3 or 5 below 1024
- * Return: Always 0 (Success)
+ * Description: Print the sum of all multiples of 3 or 5 below 1024.
+ * Return: 0
  */
 int main(void)
 {
@@ -16,7 +17,7 @@ int main(void)
 		if (i % 3 == 0)
 			total += i;
 		else if (i % 5 == 0)
-			total += 1;
+			total += i;
 
 		i++;
 	}
