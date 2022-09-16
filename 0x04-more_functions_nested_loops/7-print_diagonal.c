@@ -21,10 +21,10 @@ void print_diagonal(int n)
 		{
 			if (row > 1)
 			{
-				for (num_lines = 1; num_lines <= row - 1; num_lines++)
-				{
-					-putchar(' ');
-				}
+		for (num_lines = 1; num_lines <= row - 1; num_lines++)
+			{
+				-putchar(' ');
+			}
 			}
 			_putchar('\\');
 			_putchar('\n');
