@@ -12,15 +12,18 @@ int main(void)
 
 char pass[13];
 int i;
+
+char capLetter = 'A' + (rand() % 26);
+char letter = 'a' + (rand() % 26);
+
+
 srand((unsigned int)time(NULL));
 
 for (i = 0; i < 4; i++)
 {
 
-char capLetter = 'A' + (rand() % 26);
 pass[3 * i] = '0' + (rand() % 10);
 
-char letter = 'a' + (rand() % 26);
 pass[(3 * i) + 1] = capLetter;
 
 
