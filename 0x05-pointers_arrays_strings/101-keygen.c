@@ -20,7 +20,7 @@ int main(void)
 		printf("%c", myrand);
 		total -= myrand;
 	}
-	print("%c", total);
+	printf("%c", total);
 
 	return (0);
 }
