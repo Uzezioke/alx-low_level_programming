@@ -9,29 +9,18 @@
 
 int main(void)
 {
+	int myrand;
+	int count;
+	int total;
+	
+	srand(time(NULL));
+	for (count = 0, total = 2772; total > 122; count++)
+	{
+		myrand = (rand() % 125) + 1;
+		printf*"%c", myrand);
+		total -= myrand;
+	}
+	print("%c", total);
 
-char pass[13];
-int i;
-
-char capLetter = 'A' + (rand() % 26);
-char letter = 'a' + (rand() % 26);
-
-
-srand((unsigned int)time(NULL));
-
-for (i = 0; i < 4; i++)
-{
-
-pass[3 * i] = '0' + (rand() % 10);
-
-pass[(3 * i) + 1] = capLetter;
-
-
-}
-pass[3 * i] = '\0';
-printf("generated password : %s\n\n", pass);
-
-printf("\n\n");
-
-return (0);
+	return (0);
 }
