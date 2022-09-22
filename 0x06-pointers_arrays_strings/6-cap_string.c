@@ -9,6 +9,8 @@ char *cap_string(char *s)
 {
 	int i, j, separatorFound;
 
+	separatorFound = 1;
+
 	for (i = 0; s[i]; ++i)
 	{
 		if (separatorFound && s[i] >= 'a' && s[i] <= 'z')
