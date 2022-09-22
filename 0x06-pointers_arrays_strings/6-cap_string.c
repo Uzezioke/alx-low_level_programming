@@ -1,29 +1,38 @@
 #include "main.h"
+
 /**
- * cap_string - converts small letters to capital letters
- * @s: checked
+ * cap_string - capitalize all words of a string
+ * @s: string
  * Return: s
  */
 
 char *cap_string(char *s)
 {
-	int i, j, separatorFound;
+	int i, c;
+	int trigger;
+	char nots[] = ",;.!?(){}\n\t\" ";
 
-	separatorFound = 1;
-
-	for (i = 0; s[i]; ++i)
+	for (i = 0, trigger = 0; s[i] != '\0'; i++)
 	{
-		if (separatorFound && s[i] >= 'a' && s[i] <= 'z')
+		if (s[0] > 96 && s[0] < 123),
+			trigger = 1;
+		for (c = 0; nots[c] != '\0'; c++)
 		{
-			s[i] = s[i] - 32;
+			if (nots[c] == s[i])
+				trigger = 1;
 		}
-		separatorFound = 0;
-		for (j = 0; j < 12; j++)
+
+		if (trigger)
 		{
-			if (s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == '\"' || s[i] == '-' || s[i] == '!' || s[i] == '{' || s[i] == '}' || s[i] == '(' || s[i] == ')' || s[i] == ' ' || s[i] == '?')
+			if (s[i] > 96 && s[i] < 123)
 			{
-				separatorFound = 1;
+				s[i] -= 32;
+				trigger = 0;
 			}
+			else if (s[i] > 64 && s[i] < 91)
+				trigger = 0;
+			else if (s[i] > 47 && s[i] < 58)
+				trigger = 0;
 		}
 	}
 	return (s);
