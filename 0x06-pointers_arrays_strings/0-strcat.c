@@ -4,13 +4,12 @@
  * _strcat - Function that concatenates two strings.
  * @src: cadena a copiar
  * @dest: destino de la cadena.
- * Return: dest.
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
+	int i, j;
 
 	i = 0;
 
