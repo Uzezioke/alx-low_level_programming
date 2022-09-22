@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
  * _strcmp - copies the string pointed to by src
  *
  * @s1: checked
  * @s2: checked
- * Return: int
+ * Return: output
  */
 
 int _strcmp(char *s1, char *s2)
