@@ -21,7 +21,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 }
 
 /**
- * add_string - Adds the numbers stored in two strings.
+ * add_strings - Adds the numbers stored in two strings.
  * @n1: The string containing the firat number to be added.
  * @n2: The string cointaining the second number to be added.
  * @r: The buffer to store the result.
@@ -35,7 +35,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
 	int num, tens = 0;
 
-	for (; *n1 && *n2; n1--, n2--, r_index--)
+	for (*n1 && *n2; n1--, n2--, r_index--)
 	{
 		num = (*n1 - '0') + (*n2 - '0');
 		num += tens;
@@ -43,14 +43,14 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 		tens = num / 10;
 	}
 
-	for (; *n1; n1--; r_index++)
+	for (*n1; n1--; r_index++)
 	{
 		num = *(n1 - '0') + tens;
 		*(r + r_index) = (num % 10) + '0';
 		tens = num / 10;
 	}
 
-	for (; *n2; n2--; r_index--)
+	for (*n2; n2--; r_index--)
 	{
 		num = (*n2 - '0') + tens;
 		*(r + r_index) = (num % 10) + '0';
