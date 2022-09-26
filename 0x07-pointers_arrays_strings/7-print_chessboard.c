@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_chessbaord - Prints chessboard
+ * print_chessboard - Prints chessboard
  * @a: Double pointer
  * Return: 0
  */
