@@ -1,1 +1,0 @@
-Pointers, Arreays, Strings
