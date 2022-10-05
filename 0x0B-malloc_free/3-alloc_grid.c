@@ -18,7 +18,7 @@ int **alloc_grid(int col, int row)
 	if (row < 1 || col < 1 || grid == 0)
 		return (NULL);
 
-	for (i = 0; 1 < row; i++)
+	for (i = 0; i < row; i++)
 	{
 		grid[i] = malloc(col * sizeof(**grid));
 		if (grid[i] == 0)
